@@ -3,9 +3,8 @@ import google.generativeai as palm
 import os
 import random
 
-# api = os.getenv("MAKERSUITE_API_TOKEN")
-# palm.configure(api_key = api)
-palm.configure(api_key = "AIzaSyAoZL9Vi7joGfF9D-cIO4IkphC2-8-jJF8")
+api = os.getenv("MAKERSUITE_API_TOKEN")
+palm.configure(api_key = api)
 
 model = {"model": "models/text-bison-001"}
 
